@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jomly Flower</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="mains.js" defer></script>
+</head>
+<body>
+    <section class="header">
+            <div class="logo">Jomly Flower</div>
+            <nav class="nav">
+                <a href="#accueil">Accueil</a>
+                <a href="#services">Services</a>
+                <a href="#evénements">Evénements</a>
+                <a href="" class="reserve-button">Réservations</a>
+                <a href="" class="contact-button">Contact</a>
+            </nav>
+    </section>
+
+    <!-- accueil -->
+    <section id="home" class="hero">
+        <h1>Bienvenue chez Jomly Flower</h1>
+        <p>Spécialistes 
+            de l'organisation d'événements festifs, <br> Nous 
+            mettons notre créativité et notre passion au 
+            service de vos célébrations. 
+        </p>
+        <div class="btn">
+            <a href="" class="contact-button">Nous contactez</a>
+        </div>
+    </section>
+
+    <!-- services  -->
+    <section id="services" class="services">
+        <h2 class="section-title">Votre <span>Partenaire</span> Privilégié</h2>
+        <p>Pour transformer chaque événement en un moment inoubliable à Goma. <br>
+            Spécialistes de l'organisation d'événements festifs.</p>
+        <div class="grid">
+            <div class="box">
+                <img src="img/9873.jpg" alt="">
+                <div class="line"></div>
+                <p>Service Traiteur</p>
+            </div>
+            <div class="box">
+                <img src="img/635.jpg" alt="">
+                <div class="line"></div>
+                <p>Décoration Florale</p>
+            </div>
+            <div class="box">
+                <img src="img/10058.jpg" alt="">
+                <div class="line"></div>
+                <p>Evénements Festifs</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Evénements  -->
+    <section id="evénements" class="evénements">
+        <h2 class="section-title">Des <span>Evénements</span> Pro</h2>
+        <p>Avec Jomly Flower, vous pouvez vous détendre et profiter 
+            pleinement de votre célébration. Nous prenons en charge 
+            tous les aspects logistiques, de la planification à la coordination.
+        </p>
+        <div class="grid">
+            <div class="box">
+                <img src="img/9959.jpg" alt="Décoration de Salle">
+                <div class="line"></div>
+                <p>Mariage</p>
+            </div>
+            <div class="box">
+                <img src="img/2151013810.jpg" alt="Livraison de Fleurs">
+                <div class="line"></div>
+                <p>Anniversaire</p>
+            </div>
+            <div class="box">
+                <img src="img/19955.jpg" alt="Livraison de Cadeaux">
+                <div class="line"></div>
+                <p>Conférence</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- gateaux -->
+    <section>
+        <h2 class="section-title">Des <span>Gâteaux</span> Super</h2>
+        <p>Célébrez avec gourmandise avec nos gâteaux sur mesure, 
+            conçus pour émerveiller autant les yeux que les papilles. 
+        </p>
+        <div class="cards-container">
+            <div class="card">
+                <img src="img/chocolate-cake.jpg" alt="Image 1">
+                <p>Gâteaux</p>
+                <a href="#" class="buy-button" data-product="Gâteaux">Acheter</a>
+            </div>
+            <div class="card">
+                <img src="img/bread.jpg" alt="Image 2">
+                <p>Pâtisserie</p>
+                <a href="#" class="buy-button" data-product="Pâtisserie">Acheter</a>
+            </div>
+            <div class="card">
+                <img src="img/cheeseburger-.jpg" alt="Image 3">
+                <p>Cheeseburger</p>
+                <a href="#" class="buy-button" data-product="Cheeseburger">Acheter</a>
+            </div>
+        </div>
+        
+        <div id="payment-overlay" class="payment-overlay">
+            <div id="payment-form" class="payment-form">
+                <h2>Formulaire de Paiement</h2>
+                <form>
+                    <label for="card-number">Numéro de carte :</label>
+                    <input type="text" id="card-number" name="card-number" required>
+        
+                    <label for="expiry-date">Mot de passe :</label>
+                    <input type="text" id="expiry-date" name="expiry-date" required>
+        
+                    <label for="cvv">CVV :</label>
+                    <input type="text" id="cvv" name="cvv" required>
+        
+                    <button type="submit">Payer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- decor -->
+    <section>
+        <h2 class="section-title">Des <span>Décors</span> Personnalisés</h2>
+        <p>Laissez-nous sublimer votre espace avec nos décors personnalisés. Que ce soit pour un mariage, 
+            un anniversaire, une réception d'entreprise ou toute autre occasion spéciale.
+        </p>
+        <div class="cards-container">
+            <div class="card">
+                <img src="img/2150683473.jpg" alt="Image 1">
+                <p>Entreprise</p>
+                <a href="" class="reserve-button">Réserver</a>  
+            </div>
+            <div class="card">
+                <img src="img/2149312266.jpg" alt="Image 2">
+                <p>Anniversaire</p>
+                <a href="" class="reserve-button">Réserver</a>  
+            </div>
+            <div class="card">
+                <img src="img/9873.jpg" alt="Image 3">
+                <p>Réception</p>
+                <a href="" class="reserve-button">Réserver</a>  
+            </div>
+        </div>
+    </section>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Réservations  -->
+    <form class="reservation-form" id="reservationForm">
+        <span class="close-btn" id="closeBtn">&times;</span>
+        <input type="text" id="name" name="name" required placeholder="Prénom">
+    
+        <select id="service" name="service" required aria-placeholder="Service souhaité">
+            <option value="fleurs">Fleurs & Décoration</option>
+            <option value="cadeaux">Cadeaux personnalisés</option>
+            <option value="evenement">Organisation d'événements</option>
+            <option value="traiteur">Service traiteur</option>
+        </select>
+    
+        <textarea id="message" name="message" rows="4" placeholder="Détails supplémentaire"></textarea>
+    
+        <button type="submit" class="button">Envoyer la réservation</button>
+    </form>
+
+    <!-- contact  -->
+    <form class="contact-form" id="contactForm">
+        <span class="close-btn" id="callBtn">&times;</span>
+        <input type="text" name="name" required placeholder="Prénom">
+    
+        <input type="text" name="name" required placeholder="Email">
+    
+        <textarea name="message" rows="4" placeholder="Message"></textarea>
+    
+        <button type="submit" class="button">Envoyer</button>
+    </form>
+    
+</body>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Jomly Flower - Votre partenaire événementiel à Goma</h3>
+            <ul>
+                <li><a href="#">Youtube</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Tiktok</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Liens rapides</h3>
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#services">Nos Services</a></li>
+                <li><a href="#events">Événements</a></li>
+                <li><a href="#gifts">Cadeaux</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <ul>
+                <li>Adresse : [Votre adresse à Goma]</li>
+                <li>Téléphone : [Votre numéro de téléphone]</li>
+                <li>Email : [Votre adresse email]</li>
+                <li>Suivez-nous sur les réseaux sociaux : [Icônes des réseaux sociaux]</li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Jomly Flower | Tous droits réservés.</p>
+        </div>
+    </div>
+   
+</footer>
+    
+</html>
